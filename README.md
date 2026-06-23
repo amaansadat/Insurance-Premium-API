@@ -33,7 +33,7 @@ A production-style Insurance Premium Prediction System that combines **Machine L
 
 🔹 Dockerized deployment
 
-🔹 Frontend ↔ Backend ↔ ML Model integration
+🔹 📊 API Workflow: User Input → Streamlit Frontend → FastAPI API → ML Model Prediction → JSON Response → Streamlit Display
 
 ---
 
@@ -241,6 +241,12 @@ docker run -p 8000:8000 insurance-premium-api
 * Software Architecture
 * Git & GitHub
 * End-to-End ML Application Development
+
+---
+
+## 🌟 Key Learning Outcomes
+
+This project demonstrates practical experience in building and deploying Machine Learning-powered APIs, integrating frontend and backend systems, implementing data validation using Pydantic, handling exceptions, and containerizing applications using Docker.
 
 ---
 
