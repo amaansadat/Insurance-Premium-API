@@ -252,6 +252,6 @@ This project demonstrates practical experience in building and deploying Machine
 
 ## 👨‍💻 Author
 
-**Amaan Sadat**
+** Md Amaan Sadat**
 
 Built as a full-stack Machine Learning project integrating Data Science, Backend Development, Frontend Development, and DevOps practices.
