@@ -4,254 +4,58 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-red)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![Render](https://img.shields.io/badge/Render-Deployed-purple)
 
-### 🚀 End-to-End Machine Learning Prediction API
+### 🚀 Full-Stack Machine Learning Application 
 
-A production-style Insurance Premium Prediction System that combines **Machine Learning**, **FastAPI**, **Streamlit**, and **Docker** to deliver real-time insurance premium category predictions based on user demographics, lifestyle, and financial information.
+A production-style full-stack Machine Learning application that predicts insurance premium categories based on customer demographics, lifestyle, and financial information. The system integrates a Scikit-Learn model with a FastAPI backend, Streamlit frontend, Docker containerization, and Render cloud deployment.
 
----
+## 🌐 Live Demo
 
-## ✨ Project Highlights
+**Frontend:** https://insurance-premium-api-ui.onrender.com
 
-🔹 Machine Learning model integration using Scikit-Learn
+**API Documentation:** https://insurance-premium-api-befz.onrender.com/docs
 
-🔹 FastAPI-powered REST API backend
+**Health Check:** https://insurance-premium-api-befz.onrender.com/health
 
-🔹 Interactive Streamlit frontend
+## 🚀 Features
 
-🔹 Pydantic-based request and response validation
-
-🔹 Robust HTTP exception handling
-
-🔹 Modular project architecture
-
-🔹 Query parameter and path parameter implementation
-
-🔹 Confidence score generation
-
-🔹 Class probability prediction
-
-🔹 Dockerized deployment
-
-🔹 📊 API Workflow: User Input → Streamlit Frontend → FastAPI API → ML Model Prediction → JSON Response → Streamlit Display
-
----
-
-## 🎯 Problem Statement
-
-Insurance providers assess multiple factors such as age, income, smoking habits, occupation, and city before determining premium categories.
-
-This application automates that process by leveraging Machine Learning to predict whether a customer falls into a:
-
-* 🟢 Low Premium Category
-* 🟡 Medium Premium Category
-* 🔴 High Premium Category
-
-along with prediction confidence and probability distribution.
-
----
+- Real-time insurance premium prediction
+- FastAPI REST API backend
+- Interactive Streamlit frontend
+- Prediction confidence scores and class probabilities
+- Pydantic request and response validation
+- Dockerized deployment
+- Cloud deployment on Render
 
 ## 🛠️ Tech Stack
 
-### Backend
+**Frontend:** Streamlit
 
-* FastAPI
-* Pydantic
-* Uvicorn
+**Backend:** FastAPI, Pydantic, Uvicorn
 
-### Frontend
+**Machine Learning:** Scikit-Learn, Pandas, NumPy
 
-* Streamlit
+**DevOps:** Docker, Render, Git, GitHub
 
-### Machine Learning
+## 🏗️ Architecture
 
-* Scikit-Learn
-* Pandas
-* NumPy
-
-### DevOps
-
-* Docker
-* Git
-* GitHub
-
----
-
-## 🏗️ Software Engineering Concepts Implemented
-
-### API Development
-
-✔ RESTful API Design
-
-✔ Request Validation
-
-✔ Response Validation
-
-✔ HTTP Exception Handling
-
-✔ Structured API Endpoints
-
-✔ Query Parameters
-
-✔ Path Parameters
-
-### Machine Learning Deployment
-
-✔ Model Serialization
-
-✔ Real-Time Inference
-
-✔ Probability Prediction
-
-✔ Confidence Score Calculation
-
-### Project Structure
-
-✔ Modular Folder Organization
-
-✔ Configuration Management
-
-✔ Schema Separation
-
-✔ Model Separation
-
-✔ Frontend-Backend Decoupling
-
----
-
-## 📂 Project Structure
-
-```text
-Insurance-Premium-Prediction
-│
-├── app.py
-├── frontend.py
-├── requirements.txt
-├── dockerfile
-│
-├── config/
-├── schema/
-└── model/
-```
-
----
-
-## 📊 Sample Prediction
-
-### Input
-
-| Feature | Value |
-|----------|--------|
-| Age | 30 |
-| Weight | 65 kg |
-| Height | 1.70 m |
-| Annual Income | 10 LPA |
-| Smoker | True |
-| City | Mumbai |
-| Occupation | Retired |
-
-### Output
-
-**Predicted Insurance Premium Category:** 🟢 Low
-
-**Confidence Score:** 0.47
-
-**Class Probabilities**
-
-```json
-{
-  "High": 0.08,
-  "Low": 0.47,
-  "Medium": 0.45
-}
-```
-
----
-
-## ⚙️ Installation
-
-### Clone Repository
-
-```bash
-git clone <repository-url>
-cd Insurance-Premium-Prediction
-```
-
-### Create Virtual Environment
-
-```bash
-py -3.11 -m venv myenv311
-```
-
-### Activate Environment
-
-```bash
-myenv311\Scripts\activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ Run Backend
-
-```bash
-uvicorn app:app --reload
-```
-
----
-
-## ▶️ Run Frontend
-
-```bash
-streamlit run frontend.py
-```
-
----
-
-## 🐳 Docker Support
-
-Build Docker Image
-
-```bash
-docker build -t insurance-premium-api .
-```
-
-Run Docker Container
-
-```bash
-docker run -p 8000:8000 insurance-premium-api
-```
-
----
+User → Streamlit UI → FastAPI API → Machine Learning Model → Prediction
 
 ## 🎓 Skills Demonstrated
 
-* FastAPI Development
-* Machine Learning Deployment
-* Pydantic Validation
-* API Design
-* Error Handling
-* Streamlit Development
-* Docker Containerization
-* Software Architecture
-* Git & GitHub
-* End-to-End ML Application Development
-
----
-
-## 🌟 Key Learning Outcomes
-
-This project demonstrates practical experience in building and deploying Machine Learning-powered APIs, integrating frontend and backend systems, implementing data validation using Pydantic, handling exceptions, and containerizing applications using Docker.
-
----
+- Machine Learning Deployment
+- FastAPI Development
+- REST API Design
+- Streamlit Development
+- Pydantic Validation
+- Docker Containerization
+- Cloud Deployment
+- Software Architecture
+- Git & GitHub
 
 ## 👨‍💻 Author
 
 **Md Amaan Sadat**
 
-Built as a full-stack Machine Learning project integrating Data Science, Backend Development, Frontend Development, and DevOps practices.
+Built as a full-stack Machine Learning Application integrating Data Science, Backend Development, Frontend Development, and DevOps practices.
