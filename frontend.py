@@ -29,34 +29,34 @@ if st.button("Predict Premium Category"):
         "occupation": occupation
     }
 
-try:
-    response = requests.post(API_URL, json=input_data)
+    try:
+        response = requests.post(API_URL, json=input_data)
 
-    st.write("Status Code:", response.status_code)
-    st.write("Response Text:", response.text)
+        st.write("Status Code:", response.status_code)
+        st.write("Response Text:", response.text)
 
-    if response.status_code == 200:
+        if response.status_code == 200:
 
-        result = response.json()
+            result = response.json()
 
-        prediction = result["response"]
+            prediction = result["response"]
 
-        st.success(
-            f"Predicted Insurance Premium Category: **{prediction['predicted_category']}**"
+            st.success(
+                f"Predicted Insurance Premium Category: **{prediction['predicted_category']}**"
         )
 
-        st.write("🔍 Confidence:", prediction["confidence"])
+            st.write("🔍 Confidence:", prediction["confidence"])
 
-        st.write("📊 Class Probabilities:")
+            st.write("📊 Class Probabilities:")
 
-        st.json(prediction["class_probabilities"])
+            st.json(prediction["class_probabilities"])
 
-    else:
-        st.error(f"API Error: {response.status_code}")
-        st.write(response.text)
+        else:
+            st.error(f"API Error: {response.status_code}")
+            st.write(response.text)
 
-except requests.exceptions.ConnectionError:
-    st.error("❌ Could not connect to the FastAPI server.")
+    except requests.exceptions.ConnectionError:
+        st.error("❌ Could not connect to the FastAPI server.")
 
-except Exception as e:
-    st.error(f"Unexpected Error: {e}")
+    except Exception as e:
+        st.error(f"Unexpected Error: {e}")
