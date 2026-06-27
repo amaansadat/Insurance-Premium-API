@@ -22,11 +22,11 @@ A production-style full-stack Machine Learning application that predicts insuran
 
 ### Home Page
 
-![Home Page](images/home-page.png)
+![Home Page](images/input-form.png)
 
 ### Prediction Result
 
-![Prediction Result](images/prediction.png)
+![Prediction Result](images/prediction-result.png)
 
 ## 🚀 Features
 
