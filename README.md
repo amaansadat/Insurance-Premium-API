@@ -48,9 +48,27 @@ A production-style full-stack Machine Learning application that predicts insuran
 
 **DevOps:** Docker, Render, Git, GitHub
 
-## 🏗️ Architecture
+## 🏗️ System Architecture
 
-User → Streamlit UI → FastAPI API → Machine Learning Model → Prediction
+```mermaid
+graph LR
+
+A[User]
+
+B[Streamlit Frontend]
+
+C[FastAPI Backend]
+
+D[Scikit-Learn Model]
+
+E[Prediction Response]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> B
+```
 
 ## 🎓 Skills Demonstrated
 
