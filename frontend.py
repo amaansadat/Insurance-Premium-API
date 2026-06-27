@@ -111,6 +111,13 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
                 prediction["predicted_category"]
             )
 
+            st.progress(prediction["confidence"])
+
+            st.caption(
+                f"Prediction Confidence: {prediction['confidence']*100:.1f}%"
+            )
+
+
         st.subheader("📊 Class Probabilities")
 
         df = pd.DataFrame(
