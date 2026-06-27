@@ -77,16 +77,25 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
 
             time.sleep(5)
 
-    # If still no response
     if response is None:
-        st.error("Unable to contact backend.")
-        st.stop()
+        st.error("❌ Unable to contact the backend service.")
+        st.info(
+        "If this is the first request, the Render Free Tier backend may be waking up. "
+        "Please wait about 30–60 seconds and try again."
+    )
+    st.stop()
 
-    # If backend error
+
     if response.status_code != 200:
-        st.error("Backend is still starting or returned an error.")
-        st.write(response.text)
-        st.stop()
+        st.warning("⚠️ Backend is currently starting.")
+
+        st.info(
+        "The backend is deployed on the Render Free Tier. "
+        "After being inactive, it may take 30–60 seconds to wake up. "
+        "Please wait a moment and try again."
+    )
+
+    st.stop()
 
     # Parse result
     try:
@@ -102,7 +111,7 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
         with col1:
             st.metric(
                 "Confidence",
-                f"{prediction['confidence']:.2f}"
+                f"{prediction['confidence']*100:.1f}"
             )
 
         with col2:
