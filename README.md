@@ -10,16 +10,6 @@
 
 A production-style full-stack Machine Learning application that predicts insurance premium categories based on customer demographics, lifestyle, and financial information. The system integrates a Scikit-Learn model with a FastAPI backend, Streamlit frontend, Docker containerization, and Render cloud deployment.
 
-## 🌐 Live Demo
-
-**Frontend:** https://insurance-premium-api-ui.onrender.com
-
-**API Documentation:** https://insurance-premium-api-befz.onrender.com/docs
-
-**Health Check:** https://insurance-premium-api-befz.onrender.com/health
-
-## 🌐 Live Demo
-
 **Health Check:** https://insurance-premium-api-befz.onrender.com/health
 
 **Frontend:** https://insurance-premium-api-ui.onrender.com
