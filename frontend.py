@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import time
+import pandas as pd
 
 st.set_page_config(
     page_title="Insurance Premium Predictor",
@@ -111,7 +112,13 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
             )
 
         st.subheader("📊 Class Probabilities")
-        st.json(prediction["class_probabilities"])
+
+        df = pd.DataFrame(
+            prediction["class_probabilities"].items(),
+            columns=["Premium Category", "Probability"]
+)
+
+        st.table(df)
 
     except Exception as e:
         st.error(f"Error parsing response: {e}")
