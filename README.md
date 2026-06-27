@@ -18,6 +18,16 @@ A production-style full-stack Machine Learning application that predicts insuran
 >
 > **Note:** This application is deployed on the **Render Free Tier**. If the backend is inactive, open the **Health Check** link once (this may take 30-60 seconds) then open the frontend and retry the prediction.
 
+## 📸 Application Screenshots
+
+### Home Page
+
+![Home Page](images/home-page.png)
+
+### Prediction Result
+
+![Prediction Result](images/prediction.png)
+
 ## 🚀 Features
 
 - Real-time insurance premium prediction
