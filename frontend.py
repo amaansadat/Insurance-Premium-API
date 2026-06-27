@@ -83,7 +83,7 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
         "If this is the first request, the Render Free Tier backend may be waking up. "
         "Please wait about 30–60 seconds and try again."
     )
-    st.stop()
+        st.stop()
 
 
     if response.status_code != 200:
@@ -95,7 +95,7 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
         "Please wait a moment and try again."
     )
 
-    st.stop()
+        st.stop()
 
     # Parse result
     try:
@@ -111,7 +111,7 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
         with col1:
             st.metric(
                 "Confidence",
-                f"{prediction['confidence']*100:.1f}"
+                f"{prediction['confidence']*100:.1f}%"
             )
 
         with col2:
@@ -120,9 +120,9 @@ if st.button("🔍 Predict Premium Category", use_container_width=True):
                 prediction["predicted_category"]
             )
 
-            st.progress(prediction["confidence"])
+        st.progress(prediction["confidence"])
 
-            st.caption(
+        st.caption(
                 f"Prediction Confidence: {prediction['confidence']*100:.1f}%"
             )
 
