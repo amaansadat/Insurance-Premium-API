@@ -25,10 +25,8 @@ A production-style full-stack Machine Learning application that predicts insuran
 **Frontend:** https://insurance-premium-api-ui.onrender.com
 
 **API Documentation:** https://insurance-premium-api-befz.onrender.com/docs
-
-> **Note**
 >
-> This application is deployed on the **Render Free Tier**. If the backend is inactive, open the **Health Check** link once (this may take 30-60seconds) then open the frontend and retry the prediction.
+> **Note:** This application is deployed on the **Render Free Tier**. If the backend is inactive, open the **Health Check** link once (this may take 30-60 seconds) then open the frontend and retry the prediction.
 
 ## 🚀 Features
 
