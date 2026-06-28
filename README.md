@@ -26,7 +26,7 @@ A production-style full-stack Machine Learning application that predicts insuran
 
 ### Prediction Result
 
-![Prediction Result](images/prediction-result.png)
+![Prediction Result](images/prediction.png)
 
 ## 🚀 Features
 
